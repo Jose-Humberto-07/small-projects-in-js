@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <title>Map</title>
+    <style>
+        #mapid { 
+            height: 500px;
+            width: 50%;
+        }
+
+        body {
+            
+            padding-left: 600px;
+            padding-top: 100px;
+            background-color: #00DBDE;
+            background-color: #FFDEE9;
+            background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+
+        }
+
+        .title {
+            font-size: 15px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Your location is:</h1>
+    </div>
+    <h2></h2>
+    <div id="mapid"></div>
+    <script src="./script.js"></script>
+  
+</body>
+</html>
